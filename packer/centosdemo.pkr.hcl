@@ -7,7 +7,7 @@ packer {
   }
 }
 
-variable "zone"   {
+variable "zone" {
   type    = string
   default = "us-central1-a"
 }
@@ -31,7 +31,7 @@ source "googlecompute" "centos-stream-8" {
   image_name       = "centos-stream-8"
   machine_type     = "n1-standard-4"
   source_image     = "centos-stream-8-v20230509"
-  ssh_username     = var.ssh_username
+  ssh_username     = var.ssh_usernam
   zone             = var.zone
   project_id       = var.project_id
   credentials_file = var.credential_file_path
